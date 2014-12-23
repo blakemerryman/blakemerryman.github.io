@@ -5,8 +5,6 @@ date:   2014-12-23 16:52:31
 description: Explanation behind the Youtube View Counter Breaking
 ---
 
-# Youtube View Counter Math
-
 Youtube recently ran into issues with it's view counter for the Gangnum Style video. My friend Allen asked me why Google didn't already use the 64-bit version rather than 32-bit version. The answer: bandwidth.
 
 ## Some Stats & Facts:
