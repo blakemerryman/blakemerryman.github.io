@@ -3,12 +3,15 @@ layout: page
 title: Help / FAQ
 ---
 
-What is harmony?
-: Harmony is a free jekyll theme, for bloggers who love jekyll. Designed and build by [Gayan Virajith](http://gayanvirajith.github.io) & [Maheshika Lakmali](http://maheshikalakmali.github.io). 
+How can I contact you?
+: You can find me on Twitter [@blakemerryman](https://twitter.com/blakemerryman) or email me at blake.merryman@gmail.com.
 
-Why are you doing this?
-: For experience! Free resources are always good way to learn what you love, also help us to produce good digital work and it might end up being useful to someone.
+---
 
-Well, still have something in your mind?
-: Please drop a line to [gayanvirajith@gmail.com](gayanvirajith@gmail.com) or an [issue](https://github.com/gayanvirajith/harmony/issues/new) on Github, I am glad to response.
+## Site Info
 
+What theme does your site use?
+: [Harmony](https://github.com/gayanvirajith/harmony) is a free jekyll theme, for bloggers who love jekyll. Designed and build by [Gayan Virajith](http://gayanvirajith.github.io) & [Maheshika Lakmali](http://maheshikalakmali.github.io). 
+
+What is Jekyll?
+: [Jekyll](http://jekyllrb.com) is a simple blogging platform that allows posting via plain text files. I host my Jekyll-powered blog for free on [Github Pages](https://pages.github.com).

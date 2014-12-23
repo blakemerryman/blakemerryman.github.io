@@ -4,24 +4,18 @@ title: About me
 permalink: /about/
 ---
 
-Hi, I am Gayan Virajith, a developer (who works on the web) based on Sri Lanka. 
-Graduated from the University College Dublin (National University of Ireland). 
+Hi, I am Blake Merryman, a Cocoa Developer based in Nashville. 
+I graduated from [Middle Tennessee State University][mtsu]. 
 
-I am Working for [template-factory.nl][tf] also known as [Mearch ICT][m].
-Prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
-
-### Contact me
-
-Find me on [Google+][google] / [Github][github] / [Twitter][Twitter] or just say `Hello` at 
-[gayanvirajith@gmail.com](gayanvirajith@gmail.com).
+I work for [Griffin Technology, Inc.][gt] as a Software Developer (iOS & Mac apps).
 
 
-[tf]: http://template-factory.nl
-[m]: http://mearch.com
-[pw]: http://processwire.com
-[pwf]: http://processwire.com/talk
-[jekyll]: http://jekyllrb.com
-[github]: https://github.com/gayanvirajith
-[google]: https://plus.google.com/+GayanVirajith
-[twitter]: https://twitter.com/gayanvirajith
+### Contact Me
+
+Find me on [Github][github], [Twitter][Twitter], or shoot me an email at 
+blake.merryman@gmail.com.
+
+[gt]: http://griffintechnology.com
+[mtsu]: http://mtsu.edu
+[github]: https://github.com/blakemerryman
+[twitter]: https://twitter.com/blakemerryman
