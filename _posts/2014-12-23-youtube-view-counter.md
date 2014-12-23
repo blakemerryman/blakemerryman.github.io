@@ -15,11 +15,11 @@ Youtube recently ran into issues with it's view counter for the Gangnum Style vi
 
 ## Now For Some Math:
 
-{% highlight %}
-oldCounterBandwidth = ( 4 Bytes / view ) * ( 4 billion views / day ) = 16 GB / day *
-newCounterBandwidth = ( 8 Bytes / view ) * ( 4 billion views / day ) = 32 GB / day *
+{% highlight swift %}
+oldCounterBandwidth = ( 4 Bytes / view ) * ( 4 billion views / day ) = 16 GB / day
+newCounterBandwidth = ( 8 Bytes / view ) * ( 4 billion views / day ) = 32 GB / day
 {% endhighlight %}
 
-** Note: Final values were converted from Bytes to GigaBytes for clarity.*
+*Note: Final values were converted from Bytes to GigaBytes for clarity.*
 
-By converting to 64-bit integers to store the view counters, they are doubling their bandwidth from 16 GB per day to 32 GB per day.... **just to load the view counter**. Keep in mind that the daily view stat I found is from January 2012.
+By converting to 64-bit integers to store the view counters, they are doubling their bandwidth from 16 GB per day to 32 GB per day.... **just to load view counters**. Keep in mind that the daily view stat I found is from January 2012.
