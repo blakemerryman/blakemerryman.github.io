@@ -5,7 +5,7 @@ date:   2014-12-23 16:52:31
 description: Explanation behind the Youtube View Counter Breaking
 ---
 
-Youtube recently ran into issues with it's view counter for the [Gangnum Style video](https://www.youtube.com/watch?gl=GB&hl=en-GB&v=9bZkp7q19f0). Basically, Google was using 32-bit integers to store the view counter value for its videos. This means that it has a maximum possible value of 2,147,483,647. My friend Allen asked me why Google didn't already use the 64-bit version (which has a maximum value of 9,223,372,036,854,775,807... that's nine *quintillion* with a Q) rather than 32-bit version. The answer: bandwidth.
+Youtube recently ran into issues with it's view counter for the [Gangnum Style video](https://www.youtube.com/watch?gl=GB&hl=en-GB&v=9bZkp7q19f0). Basically, Google was using 32-bit integers to store the view counter value for its videos. This means that it had a maximum possible value of 2,147,483,647. This essentially "broke the internet" (at least for this one video) when the number of views passed that limit. My friend Allen asked me why Google didn't already use the 64-bit version (which has a maximum value of 9,223,372,036,854,775,807... that's nine *quintillion* with a Q) rather than 32-bit version. The answer: bandwidth.
 
 ## First, Some Stats & Facts:
 
