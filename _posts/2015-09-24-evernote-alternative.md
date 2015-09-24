@@ -5,10 +5,6 @@ date:   2015-09-24 16:27:00
 description: A peak into my thoughts on a custom Evernote alternative.
 ---
 
-
-
-# Evernote Alternative?
-
 I've been a long time [Evernote][en] user. With few exceptions, I dump everything that I think or discover into my Evernote database. I've even been a premium member until recently.
 
 And yet, I've never *loved* Evernote. I feel like we have always been at odds. Things never work quite how I want them to and a lot of minor details leave me frustrated. I'll save that rant for another post but the bottom line is this: I've been looking for a new note taking system for a long time and I've always been forced come back to Evernote because it is the lesser of many evils.
