@@ -5,7 +5,7 @@ date:   2017-10-19 15:18:23
 description: My current note taking solution.
 ---
 
-I've lamented about my love/hate relationship with Evernote but I never followed up about my solution to this problem. For now, I've given up on my dream of a custom built solution in favor of [Bear], a simple yet beautiful note taking solution. It even checks off many of the boxes from my wish list:
+I've [lamented][1] about my love/hate relationship with Evernote but I never followed up about my solution to this problem. For now, I've given up on my dream of a custom built solution in favor of [Bear], a simple yet beautiful note taking solution. It even checks off many of the boxes from my wish list:
 
 - [X] Powered by plain text.
 - [X] Preview/rendering options.
@@ -28,4 +28,5 @@ The silver lining in all of this is that I ostensibly control the content and it
 
 <!-- References -->
 
+[1]: http://blakemerryman.com/2015/09/24/evernote-alternative/
 [Bear]: http://www.bear-writer.com
