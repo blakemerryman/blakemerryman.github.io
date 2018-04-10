@@ -1,3 +1,11 @@
+---
+layout: post
+title:  An Introduction to Swift Codables
+date:   2018-04-10_13:24:58
+description: An introduction to Swift's Codable protcol.
+---
+
+
 ## Outline
 > _All examples assume Swift 4.1 and Xcode 9.3._
 
