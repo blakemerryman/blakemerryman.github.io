@@ -63,14 +63,10 @@ class func registerUser(_ user: User) {
     ]
 
     AwesomeAnalytics.shared.setIdentity(userId)
-    
     CoolAnalytics.shared.setUserId(userId)
     CoolAnalytics.shared.setUserProperties(traits)
-    
     WOWAnalytics.shared.identify(userId, traits: traits)
-    SearchAnalytics.shared.identifyUser(user)
-    
-    CrashAnalytics.shared.setUserIdentifier(userId)
+    SearchAnalytics.shared.identifyUser(user)    
     CrashAnalytics.shared.setUserIdentifier(userId)
 }
 ```
