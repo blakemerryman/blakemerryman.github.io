@@ -30,8 +30,8 @@ At WWDC 2017, Apple introduced `Codable` to the Swift Standard Library: a simple
 
 ## Vocabulary
 
-- Encode: The process of converting a type to an interchange format.
-- Decode: The process of converting an interchange to a type.
+- _Encode_: The process of converting a type to an interchange format (e.g. Model type to JSON).
+- _Decode_: The process of converting an interchange format to a type (e.g. JSON to Model type).
 
 ## Motivating Example
 
@@ -73,12 +73,14 @@ class Person: NSObject {
 
 ## The Old Way
 
-Before we dive into `Codable`, let's take a brief look at the work required to _manually_ decode a `Person` object. We'll be using only what `Foundation` provides us to avoid pulling any third-party frameworks into the discussion.
+Before we dive into what `Codable` gets us, let's take a brief look at the work required to _manually_ decode a `Person` object. We'll be using only what `Foundation` provides us to avoid pulling any third-party frameworks into the discussion.
 
-After making a network request, the basic process looks like this:  
+For our example, we'll be making a simple network request to get a person from SWAPI. After making a network request, the basic decoding process looks like this:
 
-- In the response, use `JSONSerialization` to deserialize raw data to a `[String: AnyObject]` dictionary.
-- Map the key-value pairs in the dictionary to a `Person` object's properties.
+- Use `JSONSerialization` to deserialize raw data to a JSON object.
+- Cast this JSON object to a dictionary (e.g. `[String: AnyObject]`).
+- Map the key-value pairs in the dictionary to a `Person`'s properties.
+- Handle any errors along the way.
 
 Here's the basic logic of the response:
 
@@ -91,8 +93,13 @@ personService.get(personId: 1) { data in
         return
     }
 
-    guard let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject] else {
+    guard let jsonObject = try? JSONSerialization.jsonObject(with: data, options: []) else {
         // handle failed deserialization...
+        return
+    }
+
+    guard let json = jsonObject as? [String: AnyObject] else {
+        // handle receiving incorrect JSON format...
         return
     }
     
@@ -104,7 +111,6 @@ personService.get(personId: 1) { data in
     // We now have a person object!
 }
 ```
-
 
 Here's a closer look at the JSON convenience initializer for `Person`:
 
@@ -151,12 +157,44 @@ extension Person {
 }
 ```
 
-This looks simple enough but, as you can imagine, this get gets tedious and error prone really fast. The main areas where things can go wrong include:
+Let's imaging that we also want the ability to encode a `Person` back to data. Here's what it looks like to manually encode a `Person` back to `Data`:
 
-- handling the raw strings used to parse values from the JSON
-- mapping raw values to specific types (e.g. `Date` or `URL`)
-- properly handling missing or malformed values
-- scaling when dealing with large or complex models
+```
+let personDictionary = person.toDictionary()
+
+guard let personData = try? JSONSerialization.data(withJSONObject: personDictionary, options: []) else {
+    // handle failure to convert back to data
+    return
+}
+
+// We now have a person as raw data!
+```
+
+Here's a closer look at the dictionary constructor for `Person`:
+
+```
+extension Person {
+
+    func toDictionary() -> [String: AnyObject] {
+        return [
+            "name": self.name as AnyObject,
+            "url": self.url.absoluteString as AnyObject,
+            "created": DateFormatter.iso8601Full.string(from: self.created) as AnyObject,
+            "birth_year": self.birthYear as AnyObject
+        ]
+    }
+
+}
+```
+
+This all seems simple enough but, as you can imagine, this becomes tedious and error prone really fast. The main areas where things can go wrong include:
+
+- working with the raw JSON key strings
+- handling non-primitive types in a type-safe manner (e.g. `Date` or `URL`)
+- dealing with missing or malformed values
+- scaling when encoding/decoding large or complex models
+
+## 
 
 
 
