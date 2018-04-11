@@ -28,6 +28,8 @@ In almost every application, developers need to interact with data that exists i
 
 At WWDC 2017, Apple introduced `Codable` to the Swift Standard Library: a simple protocol that solves the problem of converting data between interchange formats (e.g. JSON or XML) and types within our code. This protocol is customizable, easy to use, and (most importantly) a first party solution. To top it all off, Apple has even include pre-built implementations for two of the most popular interchange formats: JSON and Property Lists.
 
+This article will focus on JSON due to its ubiquity but most of the concepts discussed would be applicable for other interchange formats, such as property lists.
+
 ## Vocabulary
 
 - _Encode_: The process of converting a type to an interchange format (e.g. Model type to JSON).
@@ -194,7 +196,11 @@ This all seems simple enough but, as you can imagine, this becomes tedious and e
 - dealing with missing or malformed values
 - scaling when encoding/decoding large or complex models
 
-## 
+Luckily, Apple has done all of that work for us.
+
+## Enter `Codable`
+
+
 
 
 
