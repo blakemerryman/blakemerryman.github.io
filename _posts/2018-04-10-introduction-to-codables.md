@@ -5,23 +5,6 @@ date:   2018-04-10_13:24:58
 description: An introduction to Swift's Codable protcol.
 ---
 
-<!--  Outline
-
-> _All examples assume Swift 4.1 and Xcode 9.3._
-
-1. An Introduction to Swift’s `Codable` Protocol
-	- Brief primer on manual JSON parsing on iOS.
-	- High level overview of protocols and how to use them.
-	- Manually implementing Decodable/Encodable conformance.
-	- You get a lot for free.
-	- Decoding/Encoding strategies.
-	- Classes vs. Structs
-		- Pass by reference vs value types
-		- Deterministic property initialization
-	- 	`Codable` Network Requests
-
--->
-
 In almost every application, developers need to interact with data that exists in some intermediary format, whether that be in the form of JSON received from a network request or a property list read from disk, and convert it to a concrete type within the code base. Parsing this intermediary data and mapping to a type can be tedious and error prone. In response, numerous third party solutions have arisen over the years attempting to fill this need though none have gained a foothold large enough to be considered the "standard".
 
 At WWDC 2017, Apple introduced `Codable` to the Swift Standard Library: a simple protocol that solves the problem of converting data between interchange formats (e.g. JSON or XML) and types within our code. This protocol is customizable, easy to use, and (most importantly) a first party solution. To top it all off, Apple has even include pre-built implementations for two of the most popular interchange formats: JSON and Property Lists.
@@ -196,7 +179,7 @@ This all seems simple enough but, as you can imagine, it becomes tedious and err
 
 We could expend the energy and fix all of these problem areas but that would take a lot of time and effort. Luckily, Apple has done all of that work for us.
 
-## Enter `Codable`
+## Enter Codable
 
 Swift 4 introduced `Codable`, a simple protocol that set out to solve the problem of converting data between external formats and types in our code. Taking a closer look, we can see that it's actually a typealias combining two other protocols: `Decodable` and `Encodable`:
 
@@ -224,7 +207,7 @@ protocol Encodable {
 
 Any class, struct, or enum can declare itself as `Codable`. Apple already did the work to conform primitive Swift types, like `String`, `Int`, & `Float`. They even went the extra mile to conform several key Foundation types as well (e.g `Date`, `Data`, and `URL`). Container types like `Array`, `Dictionary`, and `Optional` are also `Codable` so long as all contained elements are `Codable`.
 
-## Conforming to `Codable`
+## Conforming to Codable
 
 Conforming our own types to `Codable` is extremely easy in most cases. Using our `Person` example, conformance is as easy as simply _declaring_ our type as `Codable`:
 
