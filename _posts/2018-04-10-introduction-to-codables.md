@@ -155,7 +155,8 @@ This looks simple enough but, as you can imagine, this get gets tedious and erro
 
 - handling the raw strings used to parse values from the JSON
 - mapping raw values to specific types (e.g. `Date` or `URL`)
-- doesn't scale well when dealing with large or complex models
+- properly handling missing or malformed values
+- scaling when dealing with large or complex models
 
 
 
