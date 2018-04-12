@@ -5,6 +5,8 @@ date:   2018-04-10_13:24:58
 description: An introduction to Swift's Codable protcol.
 ---
 
+# An Introduction to Swift Codables
+
 In almost every application, developers need to interact with data that exists in some intermediary format, whether that be in the form of JSON received from a network request or a property list read from disk, and convert it to a concrete type within the code base. Parsing this intermediary data and mapping to a type can be tedious and error prone. In response, numerous third party solutions have arisen over the years attempting to fill this need though none have gained a foothold large enough to be considered the "standard".
 
 At WWDC 2017, Apple introduced `Codable` to the Swift Standard Library: a simple protocol that solves the problem of converting data between interchange formats (e.g. JSON or XML) and types within our code. This protocol is customizable, easy to use, and (most importantly) a first party solution. To top it all off, Apple has even include pre-built implementations for two of the most popular interchange formats: JSON and Property Lists.
@@ -205,11 +207,11 @@ protocol Encodable {
 }
 ```
 
-Any class, struct, or enum can declare itself as `Codable`. Apple already did the work to conform primitive Swift types, like `String`, `Int`, & `Float`. They even went the extra mile to conform several key Foundation types as well (e.g `Date`, `Data`, and `URL`). Container types like `Array`, `Dictionary`, and `Optional` are also `Codable` so long as all contained elements are `Codable`.
+Any class, struct, or enum can declare itself as `Codable` (or even just `Decodable` or `Encodable`). Apple did a lot of work to conform primitive Swift types, like `String`, `Int`, & `Float`. They even went the extra mile to conform several key Foundation types as well (e.g `Date`, `Data`, and `URL`). Container types like `Array`, `Dictionary`, and `Optional` are also `Codable` so long as all contained elements are `Codable`.
 
 ## Conforming to Codable
 
-Conforming our own types to `Codable` is extremely easy in most cases. Using our `Person` example, conformance is as easy as simply _declaring_ our type as `Codable`:
+Conforming our own types to `Codable` is extremely easy in most cases. Using our `Person` example, conformance is as simple as _declaring_ our type to be `Codable`:
 
 ```
 class Person: NSObject, Codable {
@@ -261,6 +263,83 @@ class Person: NSObject, Codable {
 
 }
 ```
+
+> Note:
+> In more advanced scenarios, we may need to implement a lot of this encoding/decoding 
+> boilerplate ourselves. Here are a few examples of advanced scenarios where this is the case:
+> 
+> - supporting model subclasses (e.g. `class Jedi: Person {}`), 
+> - heterogenous arrays (e.g. an array where everything is a `Person` but some are also `Jedi`), or
+> - post-processing or pre-processsing data during the decoding or encoding process.
+
+To understand what's going on here, we need to discuss how `Codable` stores data: Containers. There are three fundamental container types:
+
+1. Keyed Container - contains a series of key-value pairs
+1. Unkeyed Container - contains a ordered list of values
+1. Single Value Containter - contains a single value (e.g. a single value)
+
+In our SWAPI person example, we're dealing with a JSON object that consists of key-value pairs which leads us to need access to a keyed container.
+
+This is where the `CodingKeys` enum comes into play to solve a few problems for us.
+
+```
+enum CodingKeys: String, CodingKey {
+	case name
+	case url
+	case created
+	case birthYear
+}
+```
+
+First, it identifies the container that we are interested in. There are scenarios where we may be interacting with multiple, different containers so we need a way to specify what key-value pairs we expect to decode or encode at any given point. We can see this in both the `init(from:)` and `encode(to:)` methods:
+
+```
+required init(from decoder: Decoder) throws {
+
+    // Grab the container that holds the values keyed by the coding keys...
+    let container = try decoder.container(keyedBy: CodingKeys.self)
+
+    ...
+}
+
+func encode(to encoder: Encoder) throws {
+
+	// Create a container to hold the encoded values...
+    var container = encoder.container(keyedBy: CodingKeys.self)
+    
+    ...
+}
+```
+
+Second, it maps our type's properties to key-value pairs in JSON. A type's property name should have a matching case in the `CodingKeys` enum and that case's `rawValue` should exactly match the key in JSON. This mapping is the what allows us to decode and encode values in a type-safe manner:
+
+```
+required init(from decoder: Decoder) throws {
+	...
+
+    // Decoding a type-safe value..
+	self.name = try container.decode(String.self, forKey: CodingKeys.name)
+
+    ...
+}
+
+func encode(to encoder: Encoder) throws {
+	...
+
+	// Encoding a type-safe value..
+	try container.encode(self.name, forKey: CodingKeys.name)
+    
+    ...
+}
+```
+
+At this point, it's worth noting a few things:
+
+- Currently, a coding key's raw value can only be a string or an integer, regardless of the external format.
+- Any iOS developer that has ever worked with JSON will know that JSON keys almost never follow the camel-case naming convention (i.e. `birthYear`) but rather use the snake-case naming convention (i.e. `birth_year`). Luckily, this is something that Swift's built-in `JSONDecoder`/`JSONEncoder` implementation can handle for us so we don't need to provide overrides for the coding key raw values.
+- We can see that the `init(from:)`/`encode(to:)` methods are marked as throwing errors (e.g. `throws`) and that there are a lot of `try`s sprinkled about in the code. `JSONDecoder` and `JSONEncoder` have a rich set of errors that are extremely helpful when tracking down issues while decoding or encoding data.
+
+## Codable In Action
 
 Going back to our network request, here's what decoding looks like in action:
 
@@ -316,7 +395,9 @@ catch {
 
 Note the encoding strategies that correspond to the decoding strategies discussed earlier.
 
+## Conclusion
 
+In this article, we covered just how useful Swift's `Codable` protocol can be to developers. It allows us to replace a lot of error-prone code with an expressive, type-safe system that allows us to lean more on the compiler and, in a lot of cases, significantly reducing the amount of code we have to maintain.
 
 
 
