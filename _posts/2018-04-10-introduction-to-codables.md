@@ -7,6 +7,8 @@ description: An introduction to Swift's Codable protcol.
 
 # An Introduction to Swift Codables
 
+_Blake Merryman, Senior iOS Developer at Black Pixel_
+
 In almost every application, developers need to interact with data that exists in some intermediary format, whether that be in the form of JSON received from a network request or a property list read from disk, and convert it to a concrete type within the code base. Parsing this intermediary data and mapping to a type can be tedious and error prone. In response, numerous third party solutions have arisen over the years attempting to fill this need though none have gained a foothold large enough to be considered the "standard".
 
 At WWDC 2017, Apple introduced `Codable` to the Swift Standard Library: a simple protocol that solves the problem of converting data between interchange formats (e.g. JSON or XML) and types within our code. This protocol is customizable, easy to use, and (most importantly) a first party solution. To top it all off, Apple has even include pre-built implementations for two of the most popular interchange formats: JSON and Property Lists.
