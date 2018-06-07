@@ -4,11 +4,11 @@ title: About me
 permalink: /about/
 ---
 
-I'm a Software Developer based in Nashville and proud [Middle Tennessee State University] alumnus.
+I'm a Software Engineer at Apple and proud [Middle Tennessee State University] alumnus.
 
-I've been a professional iOS Developer since 2014 and you may have seen (or even used!) some of my work. I spent time at [Griffin Technology] (iOS Engineer) and [Aloompa] (Senior iOS Developer & Team Lead). I'm currently enjoying the remote life at [Black Pixel] (Senior iOS Developer). You can see my full work history over on [LinkedIn].
+I've been a professional iOS Developer since 2014 and you may have seen (or even used!) some of my work. I spent time at [Griffin Technology] (iOS Engineer), [Aloompa] (Senior iOS Developer & Team Lead), and [Black Pixel] (Senior iOS Developer). I'm currently enjoying the West Coast life at Apple (Software Engineer). You can see my full work history over on [LinkedIn].
 
-I'm also the Lead Organizer for [Nashville CocoaHeads].
+Any opinions on this site are my own.
 
 ### Contact Me
 
