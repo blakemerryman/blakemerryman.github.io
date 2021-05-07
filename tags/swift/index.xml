@@ -1,3 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>swift on Blake Merryman</title><link>http://www.blakemerryman.com/tags/swift/</link><description>Recent content in swift on Blake Merryman</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Nov 2017 10:05:00 +0000</lastBuildDate><atom:link href="http://www.blakemerryman.com/tags/swift/index.xml" rel="self" type="application/rss+xml"/><item><title>Swift Tips Series</title><link>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</link><pubDate>Thu, 09 Nov 2017 10:05:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</guid><description>Recently, I wrote a series of Swift tips over at my company’s blog. This started out as a simple CocoaHeads talk where I was sharing my own personal best practices with the group.
-Striving for Smallness Documentation Organization Access Control Early Exits Closure-Based CollectionType APIs Property Configuration Lazy Sequences Debugging Slow Build Times I’d love to hear your thoughts and feedback. Feel free to reach out to me on Twitter @blakemerryman.</description></item><item><title>Swift Scripts at CocoaHeads</title><link>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</link><pubDate>Mon, 16 Feb 2015 10:00:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</guid><description>Speaking of Swift, I delivered a presentation on scripting with Swift at Nashville CocoaHeads at the end of January, earlier this year. Check out the video and head over to the Github repository for the source code and more information.</description></item><item><title>Swift 1.2</title><link>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</link><pubDate>Fri, 13 Feb 2015 12:31:59 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</guid><description>I&amp;rsquo;m really excited about the changes to Swift in the current Xcode 6.3 beta. Apple has answered several of my biggest gripes with Swift. Here are some of the highlights:
-Incremental builds for increased build performance Native Set collection class that bridges to NSSet, joining Array/NSArray and Dictionary/NSDictionary static methods and properties support for classes Improved type inference for single-expression closures Swift enums can now be exported to Objective-C let constants no longer need immediate initialization General performance enhancements General improvements to Swift-Objective-C interoperability And my personal favorite:</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>swift on Blake Merryman</title><link>http://www.blakemerryman.com/tags/swift/</link><description>Recent content in swift on Blake Merryman</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 09 Nov 2017 10:05:00 +0000</lastBuildDate><atom:link href="http://www.blakemerryman.com/tags/swift/index.xml" rel="self" type="application/rss+xml"/><item><title>Swift Tips Series</title><link>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</link><pubDate>Thu, 09 Nov 2017 10:05:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</guid><description>&lt;p>Recently, I wrote a series of Swift tips over at my &lt;a href="https://medium.com/bpxl-craft">company’s blog&lt;/a>. This started out as a simple CocoaHeads talk where I was sharing my own personal best practices with the group.&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-striving-for-smallness-9f3554508324">Striving for Smallness&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-documentation-abbd1e31553a">Documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-organization-47f2422afe23">Organization&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-access-control-e2579e03f969">Access Control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-early-exits-8ccd93403808">Early Exits&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-closure-based-collectiontype-apis-20ff8e1428e2">Closure-Based CollectionType APIs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-property-configuration-cae9d6c9f84c">Property Configuration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-lazy-sequences-59058ac1454f">Lazy Sequences&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-debugging-slow-build-times-bf333aae6874">Debugging Slow Build Times&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>I’d love to hear your thoughts and feedback. Feel free to reach out to me on Twitter &lt;a href="https://twitter.com/blakemerryman">@blakemerryman&lt;/a>.&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>Swift Scripts at CocoaHeads</title><link>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</link><pubDate>Mon, 16 Feb 2015 10:00:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</guid><description>&lt;p>Speaking of Swift, I delivered a presentation on scripting with Swift at &lt;a href="http://cocoaheads.org:8106/us/NashvilleTennessee/index.html">Nashville CocoaHeads&lt;/a> at the end of January, earlier this year. Check out the &lt;a href="https://www.youtube.com/watch?v=7dkyTOC6Ie8">video&lt;/a> and head over to the &lt;a href="https://github.com/blakemerryman/Swift-Scripts">Github repository&lt;/a> for the source code and more information.&lt;/p></description></item><item><title>Swift 1.2</title><link>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</link><pubDate>Fri, 13 Feb 2015 12:31:59 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</guid><description>&lt;p>I&amp;rsquo;m really excited about the changes to Swift in the current Xcode 6.3 beta. Apple has answered several of my biggest gripes with Swift. Here are some of the highlights:&lt;/p>
+&lt;ul>
+&lt;li>Incremental builds for increased build performance&lt;/li>
+&lt;li>Native &lt;code>Set&lt;/code> collection class that bridges to &lt;code>NSSet&lt;/code>, joining &lt;code>Array&lt;/code>/&lt;code>NSArray&lt;/code> and &lt;code>Dictionary&lt;/code>/&lt;code>NSDictionary&lt;/code>&lt;/li>
+&lt;li>&lt;code>static&lt;/code> methods and properties support for classes&lt;/li>
+&lt;li>Improved type inference for single-expression closures&lt;/li>
+&lt;li>Swift enums can now be exported to Objective-C&lt;/li>
+&lt;li>&lt;code>let&lt;/code> constants no longer need immediate initialization&lt;/li>
+&lt;li>General performance enhancements&lt;/li>
+&lt;li>General improvements to Swift-Objective-C interoperability&lt;/li>
+&lt;/ul>
+&lt;p>And my personal favorite:&lt;/p>
+&lt;ul>
+&lt;li>Nested &amp;amp; enhanced optional binding&lt;/li>
+&lt;/ul>
+&lt;p>Now, this:&lt;/p>
+&lt;pre>&lt;code>if let x = self.x {
+if let y = self.y {
+if let z = self.z {
+if z == true {
+// Do something at the top of the Pyramid of Doom!
+}
+}
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>becomes this:&lt;/p>
+&lt;pre>&lt;code>if let x = self.x, y = self.y, z = self.z where z == true {
+// Do Something without climbing the Pyramid!
+}
+&lt;/code>&lt;/pre>
+&lt;p>Beautiful!&lt;/p>
+&lt;hr>
+&lt;p>Apple has even included a handy Migration Tool to get your code from Swift version 1.1 to version 1.2.&lt;/p>
+&lt;p>There are a lot of other great changes as well (including enhancements to Objective-C) so head over to the Apple Developer Center to download the beta and read the full release notes.&lt;/p></description></item></channel></rss>

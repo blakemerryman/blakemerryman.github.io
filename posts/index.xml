@@ -1,7 +1,199 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blake Merryman</title><link>http://www.blakemerryman.com/posts/</link><description>Recent content in Posts on Blake Merryman</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Apr 2021 00:08:00 +0000</lastBuildDate><atom:link href="http://www.blakemerryman.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Nashville Favorites</title><link>http://www.blakemerryman.com/posts/nashville-favorites/</link><pubDate>Thu, 22 Apr 2021 00:08:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/nashville-favorites/</guid><description>Living in California during the pandemic definitely has me missing home. I thought it would be helpful to put together a list of my favorite spots back in Music City.</description></item><item><title>Swift Tips Series</title><link>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</link><pubDate>Thu, 09 Nov 2017 10:05:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</guid><description>Recently, I wrote a series of Swift tips over at my company’s blog. This started out as a simple CocoaHeads talk where I was sharing my own personal best practices with the group.
-Striving for Smallness Documentation Organization Access Control Early Exits Closure-Based CollectionType APIs Property Configuration Lazy Sequences Debugging Slow Build Times I’d love to hear your thoughts and feedback. Feel free to reach out to me on Twitter @blakemerryman.</description></item><item><title>Bear Writer</title><link>http://www.blakemerryman.com/posts/2017-10-19-bear-notes/</link><pubDate>Thu, 19 Oct 2017 15:18:23 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-10-19-bear-notes/</guid><description>I&amp;rsquo;ve lamented about my love/hate relationship with Evernote but I never followed up about my solution to this problem. For now, I&amp;rsquo;ve given up on my dream of a custom built solution in favor of Bear, a simple yet beautiful note taking solution. It even checks off many of the boxes from my wish list:
-Powered by plain text. Preview/rendering options. Multi-media support. Hand writing / drawing support. Customizable organization (via tags).</description></item><item><title>Evernote Alternative?</title><link>http://www.blakemerryman.com/posts/2015-09-24-evernote-alternative/</link><pubDate>Thu, 24 Sep 2015 16:27:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-09-24-evernote-alternative/</guid><description>I&amp;rsquo;ve been a long time Evernote user. With few exceptions, I dump everything that I think or discover into my Evernote database. I&amp;rsquo;ve even been a premium member until recently.
-And yet, I&amp;rsquo;ve never loved Evernote. I feel like we have always been at odds. Things never work quite how I want them to and a lot of minor details leave me frustrated. I&amp;rsquo;ll save that rant for another post but the bottom line is this: I&amp;rsquo;ve been looking for a new note taking system for a long time and I&amp;rsquo;ve always been forced come back to Evernote because it is the lesser of many evils.</description></item><item><title>Initial Thoughts - Apple Special Event, Sept. 9, 2015</title><link>http://www.blakemerryman.com/posts/2015-09-09-apple-special-event-sept-9-2015/</link><pubDate>Wed, 09 Sep 2015 23:12:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-09-09-apple-special-event-sept-9-2015/</guid><description>We all knew what was coming and it was still a doozy. The rumor mill basically got everything correct and this was still one of the best keynotes in a long time. I plan on writing more in depth about each major topic but for now, here are my first impressions.
-Lack of “Status Updates”
-In the past, Apple has kicked off every event with a stacatto of numbers about how great Apple has been doing.</description></item><item><title>Swift Scripts at CocoaHeads</title><link>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</link><pubDate>Mon, 16 Feb 2015 10:00:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</guid><description>Speaking of Swift, I delivered a presentation on scripting with Swift at Nashville CocoaHeads at the end of January, earlier this year. Check out the video and head over to the Github repository for the source code and more information.</description></item><item><title>Swift 1.2</title><link>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</link><pubDate>Fri, 13 Feb 2015 12:31:59 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</guid><description>I&amp;rsquo;m really excited about the changes to Swift in the current Xcode 6.3 beta. Apple has answered several of my biggest gripes with Swift. Here are some of the highlights:
-Incremental builds for increased build performance Native Set collection class that bridges to NSSet, joining Array/NSArray and Dictionary/NSDictionary static methods and properties support for classes Improved type inference for single-expression closures Swift enums can now be exported to Objective-C let constants no longer need immediate initialization General performance enhancements General improvements to Swift-Objective-C interoperability And my personal favorite:</description></item><item><title>Youtube View Counter</title><link>http://www.blakemerryman.com/posts/2014-12-23-youtube-view-counter/</link><pubDate>Tue, 23 Dec 2014 16:52:31 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2014-12-23-youtube-view-counter/</guid><description>Youtube recently ran into issues with it&amp;rsquo;s view counter for the Gangnum Style video. Basically, Google was using 32-bit integers to store the view counter value for its videos. This means that it had a maximum possible value of 2,147,483,647. This essentially &amp;ldquo;broke the internet&amp;rdquo; (at least for this one video) when the number of views passed that limit. My friend Allen asked me why Google didn&amp;rsquo;t already use the 64-bit version (which has a maximum value of 9,223,372,036,854,775,807&amp;hellip; that&amp;rsquo;s nine quintillion with a Q) rather than 32-bit version.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Blake Merryman</title><link>http://www.blakemerryman.com/posts/</link><description>Recent content in Posts on Blake Merryman</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Apr 2021 00:08:00 +0000</lastBuildDate><atom:link href="http://www.blakemerryman.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Nashville Favorites</title><link>http://www.blakemerryman.com/posts/nashville-favorites/</link><pubDate>Thu, 22 Apr 2021 00:08:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/nashville-favorites/</guid><description>&lt;p>Living in California during the pandemic definitely has me missing home. I thought it would be helpful to put together
+a list of my favorite spots back in Music City.&lt;/p>
+&lt;h2 id="food--drinks">Food &amp;amp; Drinks&lt;/h2>
+&lt;ul>
+&lt;li>Hattie B&amp;rsquo;s Hot Chicken&lt;/li>
+&lt;li>Martin&amp;rsquo;s Bar-B-Cue Joint&lt;/li>
+&lt;li>Five Points Pizza&lt;/li>
+&lt;li>DeSano Pizza&lt;/li>
+&lt;li>The Patterson House&lt;/li>
+&lt;li>M.L. Rose&lt;/li>
+&lt;li>Kayne Prime Steakhouse&lt;/li>
+&lt;li>Virago Sushi&lt;/li>
+&lt;li>Pinewood Social&lt;/li>
+&lt;li>Pucket&amp;rsquo;s Grocery &amp;amp; Restaurant&lt;/li>
+&lt;li>Otaku Ramen&lt;/li>
+&lt;li>Tacqueria Del Sol&lt;/li>
+&lt;li>Burger Up&lt;/li>
+&lt;li>Las Paletas&lt;/li>
+&lt;li>Taquería La Juquilita&lt;/li>
+&lt;/ul>
+&lt;h2 id="coffee--breakfast">Coffee &amp;amp; Breakfast&lt;/h2>
+&lt;ul>
+&lt;li>8th &amp;amp; Roast&lt;/li>
+&lt;li>Frothy Monkey&lt;/li>
+&lt;li>Barista Parlor&lt;/li>
+&lt;li>Proper Bagel&lt;/li>
+&lt;li>Steadfast&lt;/li>
+&lt;li>Fido&lt;/li>
+&lt;/ul>
+&lt;h2 id="breweries">Breweries&lt;/h2>
+&lt;ul>
+&lt;li>Jackolope Brewing Company&lt;/li>
+&lt;li>Yazoo Brewing Company&lt;/li>
+&lt;li>Tennessee Brew Works&lt;/li>
+&lt;li>Fat Bottom Brewing&lt;/li>
+&lt;li>Tailgate Brewery&lt;/li>
+&lt;/ul>
+&lt;h2 id="entertainment">Entertainment&lt;/h2>
+&lt;ul>
+&lt;li>Robert&amp;rsquo;s Western World&lt;/li>
+&lt;li>Rudy&amp;rsquo;s Jazzroom&lt;/li>
+&lt;li>House of Cards&lt;/li>
+&lt;li>Headquarters Beercade&lt;/li>
+&lt;li>Schermerhorn Symphony Center&lt;/li>
+&lt;li>Ascend Amphitheatre&lt;/li>
+&lt;li>See a game for any of our sports teams&lt;/li>
+&lt;li>Pick almost any bar or restaurant and you&amp;rsquo;ll find live music&lt;/li>
+&lt;/ul>
+&lt;h2 id="outdoors">Outdoors&lt;/h2>
+&lt;ul>
+&lt;li>Centennial Park&lt;/li>
+&lt;li>Percy Warner Park&lt;/li>
+&lt;li>Long Hunter State Park&lt;/li>
+&lt;li>Sevier Park&lt;/li>
+&lt;/ul></description></item><item><title>Swift Tips Series</title><link>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</link><pubDate>Thu, 09 Nov 2017 10:05:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-11-09-swift-tips-series/</guid><description>&lt;p>Recently, I wrote a series of Swift tips over at my &lt;a href="https://medium.com/bpxl-craft">company’s blog&lt;/a>. This started out as a simple CocoaHeads talk where I was sharing my own personal best practices with the group.&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-striving-for-smallness-9f3554508324">Striving for Smallness&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-documentation-abbd1e31553a">Documentation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-organization-47f2422afe23">Organization&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-access-control-e2579e03f969">Access Control&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-early-exits-8ccd93403808">Early Exits&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-closure-based-collectiontype-apis-20ff8e1428e2">Closure-Based CollectionType APIs&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-property-configuration-cae9d6c9f84c">Property Configuration&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-lazy-sequences-59058ac1454f">Lazy Sequences&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/bpxl-craft/swift-tips-debugging-slow-build-times-bf333aae6874">Debugging Slow Build Times&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>I’d love to hear your thoughts and feedback. Feel free to reach out to me on Twitter &lt;a href="https://twitter.com/blakemerryman">@blakemerryman&lt;/a>.&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>Bear Writer</title><link>http://www.blakemerryman.com/posts/2017-10-19-bear-notes/</link><pubDate>Thu, 19 Oct 2017 15:18:23 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2017-10-19-bear-notes/</guid><description>&lt;p>I&amp;rsquo;ve &lt;a href="http://blakemerryman.com/2015/09/24/evernote-alternative/">lamented&lt;/a> about my love/hate relationship with Evernote but I never followed up about my solution to this problem. For now, I&amp;rsquo;ve given up on my dream of a custom built solution in favor of &lt;a href="http://www.bear-writer.com">Bear&lt;/a>, a simple yet beautiful note taking solution. It even checks off many of the boxes from my wish list:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Powered by plain text.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Preview/rendering options.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Multi-media support.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Hand writing / drawing support.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Customizable organization (via tags).&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Search.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Mobile friendly. There is apps for iPhone, iPad, &amp;amp; Mac.&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Affordable and viable. Subscription pricing: $1.49/monthly or $14.99/annually.&lt;/li>
+&lt;/ul>
+&lt;p>Still missing from my wishlist:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Varied storage options. For now, iCloud is the only supported storage option. This is fine for now as I live in an Apple dominated world.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Text transcription. I can sketch and write on notes but can&amp;rsquo;t easily search this hand-crafted content.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Web service. There is no way to access this content from the web.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Customizable templates. There is not any template support.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Extensible. There is no way to extend bear with your own functionality.&lt;/li>
+&lt;/ul>
+&lt;p>The silver lining in all of this is that I ostensibly control the content and it is being stored in an easily transferable format. This app is also well maintained and will hopefully add many of the features that I&amp;rsquo;m looking for.&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>Evernote Alternative?</title><link>http://www.blakemerryman.com/posts/2015-09-24-evernote-alternative/</link><pubDate>Thu, 24 Sep 2015 16:27:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-09-24-evernote-alternative/</guid><description>&lt;p>I&amp;rsquo;ve been a long time &lt;a href="https://evernote.com/">Evernote&lt;/a> user. With few exceptions, I dump everything that I think or discover into my Evernote database. I&amp;rsquo;ve even been a premium member until recently.&lt;/p>
+&lt;p>And yet, I&amp;rsquo;ve never &lt;em>loved&lt;/em> Evernote. I feel like we have always been at odds. Things never work quite how I want them to and a lot of minor details leave me frustrated. I&amp;rsquo;ll save that rant for another post but the bottom line is this: I&amp;rsquo;ve been looking for a new note taking system for a long time and I&amp;rsquo;ve always been forced come back to Evernote because it is the lesser of many evils.&lt;/p>
+&lt;p>With all of the discussion about the &amp;ldquo;open web&amp;rdquo; lately, I&amp;rsquo;ve been toying with the idea of building my own system, using existing technologies and supplementing with my own open-sourced utilities. This post won&amp;rsquo;t go into the nitty-gritty details and is more of an outline of what features I think this system should have in order to meet my needs. So let&amp;rsquo;s begin.&lt;/p>
+&lt;h2 id="wish-list">Wish List&lt;/h2>
+&lt;p>This list is not all encompassing, nor are all items required. These are just things I want (and use in my current system).&lt;/p>
+&lt;ol>
+&lt;li>Powered by plain text files. Whether you prefer to take notes in &lt;a href="http://daringfireball.net/projects/markdown/">Markdown&lt;/a>, HTML, plain text, or &lt;a href="https://en.wikipedia.org/wiki/LaTeX">LaTex&lt;/a>, this system should take any and all text files without regard for the contents.&lt;/li>
+&lt;li>Preview/rendering options. This system should easily allow the user to preview their marked-up plain-text content. Preferably with a live preview option. Also, presentation mode!&lt;/li>
+&lt;li>Varied storage options. A user should not have their thoughts and ideas locked into a third party&amp;rsquo;s cloud. They should be able to pick and choose and easily relocate their data at anytime. Ideally, the user can even host their own data.&lt;/li>
+&lt;li>Supports multi-media. As much as the developer in me wishes that everything existed in text, even I have to add images &amp;amp; videos to my notes every now and again. This should be easy &amp;amp; intuitive.&lt;/li>
+&lt;li>Hand writing support. Some people just prefer to take notes the old fashioned way or have sketches interspersed throughout.&lt;/li>
+&lt;li>Customizable organization. If the user wants to file things away in folders by month or year, great. If the user wants to file everything away in one large, hot-mess of a folder, also great.&lt;/li>
+&lt;li>Search. It should be easy to find what you&amp;rsquo;re looking for.&lt;/li>
+&lt;li>Text transcription. This is one feature that Evernote really nailed and probably the hardest to replicate. Ideally, this would tie in with search as well.&lt;/li>
+&lt;li>Mobile friendly (first?). We live in a progressively mobile first world whether we like it or not. This system should function equally well on phones, tablets, computers, and the web.&lt;/li>
+&lt;li>Web Service. This system should be able to live on the web, including self-hosted.&lt;/li>
+&lt;li>Affordable but viable. Fairly priced for consumers and the developer(s).&lt;/li>
+&lt;li>Customizable templates. Whether you&amp;rsquo;re bookmarking sites or journalling, a good template can save you time.&lt;/li>
+&lt;li>Extensible. Feature missing? Easily add it in yourself.&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;p>Basically what I want is a fast, simple, powerful note taking platform that is also useful for bookmarking, planning, todo-list managing, and cross-platforming utility. Not much&amp;hellip; just everything.&lt;/p>
+&lt;p>This will probably (read: definitely) be on long, drawn out process as I piecemeal this all together (or give up and move on to something else, as I’m want to do on projects like these).&lt;/p>
+&lt;p>If you have suggestions or thoughts, feel free to &lt;a href="https://twitter.com/blakemerryman">contact me on Twitter&lt;/a>.&lt;/p></description></item><item><title>Initial Thoughts - Apple Special Event, Sept. 9, 2015</title><link>http://www.blakemerryman.com/posts/2015-09-09-apple-special-event-sept-9-2015/</link><pubDate>Wed, 09 Sep 2015 23:12:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-09-09-apple-special-event-sept-9-2015/</guid><description>&lt;p>We all knew what was coming and it was still a doozy. The rumor mill basically got everything correct and this was still one of the best keynotes in a long time. I plan on writing more in depth about each major topic but for now, here are my first impressions.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Lack of “Status Updates”&lt;/p>
+&lt;p>In the past, Apple has kicked off every event with a stacatto of numbers about how great Apple has been doing. The past few events, however, Tim Cook has basically said “we’ve already crammed so much into this time slot that we don’t have time for updates; things are great; let’s do this”… which, in my opinion, is a welcome change that shows Cook’s leadership style comfortably in place at Apple.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.apple.com/watch/">Apple Watch &amp;amp; watchOS 2&lt;/a>&lt;/p>
+&lt;p>I’m not über thrilled about the Watch-related announcements but there were a few gems. The updated watchOS will bring some much needed stability &amp;amp; performance improves to the fledgling platform (including a few nice new features like third party complications). Additionally, I think it’s great that not only is Apple continuing to produce new finishes and bands, but they are beginning to partner with serious companies to branch out with new collections of bands.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.apple.com/ipad-pro/">iPad Pro, Keyboard, &amp;amp; Pencil&lt;/a>&lt;/p>
+&lt;p>A huge (and yet light) screen powered by iOS 9. Multi-tasking. Touch ID. Retina Display. Stereo speakers. All day battery life. Coupled with a ridiculously engineered Pencil (I didn’t say stylus!) and an interesting keyboard case, this could be the general purpose computing device that I’ve been waiting for. Slim, beautiful, powerful, versatile. I’m am stoked about this product combo.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.apple.com/tv/">AppleTV &amp;amp; tvOS&lt;/a>&lt;/p>
+&lt;p>This will be in my living room as soon as it comes out. The AppleTV finally has an app platform. Apps are universal. Unified, refine-able search across content sources. A multi-touch remote that also acts as a microphone for voice commands. Powerful Siri voice search. A powerful, 64-bit system on a chip capable of Apple’s new Metal technology (high performance graphics). Support for bluetooth controllers.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.apple.com/iphone-6s/">iPhone 6S &amp;amp; 6S Plus&lt;/a>&lt;/p>
+&lt;p>The new iPhones are pretty amazing. Tougher materials. 3D Touch technology (the “peak” and “pop” paradigm is pretty ingenious). 12MP camera capable of 4K video. Moving photos from the Wizarding world. Rose gold isn’t for me but it is beautiful.&lt;/p>
+&lt;p>If only Apple would stop shipping 16GB phones. An uncompressed 4K video a few minutes in length can be close to 10GB in size (depending on format). Seriously Apple, come on. The fact that Apple continues to ship 16GB iPhones seriously rained on my parade.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="http://www.apple.com/shop/iphone/iphone-upgrade-program">iPhone Upgrade Program&lt;/a>&lt;/p>
+&lt;p>This may be the announcement that I’m most excited about. Apple’s new upgrade program will finally allow one to affordably decouple our iPhone purchases from our service carrier bills. Here are the key points:&lt;/p>
+&lt;ul>
+&lt;li>New iPhone every year&lt;/li>
+&lt;li>Unlocked&lt;/li>
+&lt;li>Low monthly payments (2 year commitment required through the Apple Store)&lt;/li>
+&lt;li>AppleCare+ (protection plan)&lt;/li>
+&lt;/ul>
+&lt;p>I think decoupling hardware purchases from cellular service carriers is a good thing that will benefit the consumer and further drive carriers to focus on their service reliability and affordability rather than the handsets.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Naming Conventions&lt;/p>
+&lt;p>With iOS, watchOS, &amp;amp; now tvOS, I don’t think it will be long before we see Mac OS X become macOS. And I &lt;em>really&lt;/em> like this naming convention.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Power Connectors&lt;/p>
+&lt;p>I had thought that with Apple’s adoption of USB Type C on the new MacBook that we might see the iPhones transition to the new connector in a year or so. However, with several new products (the TV Remote &amp;amp; Pencil) adopting the Lightning Connector for charging, I’m not so sure.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Swift Scripts at CocoaHeads</title><link>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</link><pubDate>Mon, 16 Feb 2015 10:00:00 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-16-cocoaheads-swift-scripts/</guid><description>&lt;p>Speaking of Swift, I delivered a presentation on scripting with Swift at &lt;a href="http://cocoaheads.org:8106/us/NashvilleTennessee/index.html">Nashville CocoaHeads&lt;/a> at the end of January, earlier this year. Check out the &lt;a href="https://www.youtube.com/watch?v=7dkyTOC6Ie8">video&lt;/a> and head over to the &lt;a href="https://github.com/blakemerryman/Swift-Scripts">Github repository&lt;/a> for the source code and more information.&lt;/p></description></item><item><title>Swift 1.2</title><link>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</link><pubDate>Fri, 13 Feb 2015 12:31:59 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2015-02-13-swift-1.2/</guid><description>&lt;p>I&amp;rsquo;m really excited about the changes to Swift in the current Xcode 6.3 beta. Apple has answered several of my biggest gripes with Swift. Here are some of the highlights:&lt;/p>
+&lt;ul>
+&lt;li>Incremental builds for increased build performance&lt;/li>
+&lt;li>Native &lt;code>Set&lt;/code> collection class that bridges to &lt;code>NSSet&lt;/code>, joining &lt;code>Array&lt;/code>/&lt;code>NSArray&lt;/code> and &lt;code>Dictionary&lt;/code>/&lt;code>NSDictionary&lt;/code>&lt;/li>
+&lt;li>&lt;code>static&lt;/code> methods and properties support for classes&lt;/li>
+&lt;li>Improved type inference for single-expression closures&lt;/li>
+&lt;li>Swift enums can now be exported to Objective-C&lt;/li>
+&lt;li>&lt;code>let&lt;/code> constants no longer need immediate initialization&lt;/li>
+&lt;li>General performance enhancements&lt;/li>
+&lt;li>General improvements to Swift-Objective-C interoperability&lt;/li>
+&lt;/ul>
+&lt;p>And my personal favorite:&lt;/p>
+&lt;ul>
+&lt;li>Nested &amp;amp; enhanced optional binding&lt;/li>
+&lt;/ul>
+&lt;p>Now, this:&lt;/p>
+&lt;pre>&lt;code>if let x = self.x {
+if let y = self.y {
+if let z = self.z {
+if z == true {
+// Do something at the top of the Pyramid of Doom!
+}
+}
+}
+}
+&lt;/code>&lt;/pre>
+&lt;p>becomes this:&lt;/p>
+&lt;pre>&lt;code>if let x = self.x, y = self.y, z = self.z where z == true {
+// Do Something without climbing the Pyramid!
+}
+&lt;/code>&lt;/pre>
+&lt;p>Beautiful!&lt;/p>
+&lt;hr>
+&lt;p>Apple has even included a handy Migration Tool to get your code from Swift version 1.1 to version 1.2.&lt;/p>
+&lt;p>There are a lot of other great changes as well (including enhancements to Objective-C) so head over to the Apple Developer Center to download the beta and read the full release notes.&lt;/p></description></item><item><title>Youtube View Counter</title><link>http://www.blakemerryman.com/posts/2014-12-23-youtube-view-counter/</link><pubDate>Tue, 23 Dec 2014 16:52:31 +0000</pubDate><guid>http://www.blakemerryman.com/posts/2014-12-23-youtube-view-counter/</guid><description>&lt;p>Youtube recently ran into issues with it&amp;rsquo;s view counter for the &lt;a href="https://www.youtube.com/watch?gl=GB&amp;amp;hl=en-GB&amp;amp;v=9bZkp7q19f0">Gangnum Style video&lt;/a>. Basically, Google was using 32-bit integers to store the view counter value for its videos. This means that it had a maximum possible value of 2,147,483,647. This essentially &amp;ldquo;broke the internet&amp;rdquo; (at least for this one video) when the number of views passed that limit. My friend Allen asked me why Google didn&amp;rsquo;t already use the 64-bit version (which has a maximum value of 9,223,372,036,854,775,807&amp;hellip; that&amp;rsquo;s nine &lt;em>quintillion&lt;/em> with a Q) rather than 32-bit version. The answer: bandwidth.&lt;/p>
+&lt;h2 id="first-some-stats--facts">First, Some Stats &amp;amp; Facts:&lt;/h2>
+&lt;ul>
+&lt;li>In &lt;a href="http://youtube-global.blogspot.com/2012/01/holy-nyans-60-hours-per-minute-and-4.html">January 2012&lt;/a>, Google had over 4 billion views per day. It&amp;rsquo;s definitely more now, but this is the most up-to-date stat I could find.&lt;/li>
+&lt;li>Every time you load a Youtube video, you are downloading that view counter (along with the video and everything else on the page).&lt;/li>
+&lt;li>32-bit integers take up 4 Bytes; 64-bit integers take up 8 Bytes.&lt;/li>
+&lt;/ul>
+&lt;h2 id="now-for-some-math">Now For Some Math:&lt;/h2>
+&lt;pre>&lt;code>oldCounterBandwidth = ( 4 Bytes / view ) * ( 4 billion views / day ) = 16 GB / day
+newCounterBandwidth = ( 8 Bytes / view ) * ( 4 billion views / day ) = 32 GB / day
+&lt;/code>&lt;/pre>
+&lt;p>&lt;em>Note: Final values were converted from Bytes to GigaBytes for clarity.&lt;/em>&lt;/p>
+&lt;p>By converting to 64-bit integers to store the view counters, they are doubling their bandwidth from 16 GB per day to 32 GB per day&amp;hellip;. &lt;strong>just to load view counters&lt;/strong>. Keep in mind that the daily view stat I found is from January 2012.&lt;/p></description></item></channel></rss>
